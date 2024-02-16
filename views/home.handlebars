@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <h1>Welcome to the Home Page</h1>
+
+    {{#if products.length}}
+        <ul>
+            {{#each products}}
+                <li>{{this.title}} - {{this.description}} - ${{this.price}}</li>
+            {{/each}}
+        </ul>
+    {{else}}
+        <p>No products available.</p>
+    {{/if}}
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>All Products</title>
+</head>
+
+<body>
+    <h1>All Products</h1>
+
+    <!-- Display welcome message and user details -->
+    <h2>Bienvenido, {{user.email}} ({{user.role}})</h2>
+
+    <div id="products-container">
+        <!-- Product display will be populated here -->
+    </div>
+
+    <a href="/logout">Logout</a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", async function () {
+            try {
+                // Fetch all products from the API
+                const response = await fetch("/api/products");
+                const result = await response.json();
+
+                const productsContainer = document.getElementById("products-container");
+
+                if (result.status === "success") {
+                    const products = result.payload;
+
+                    // Display products on the web page
+                    products.forEach(product => {
+                        const productElement = document.createElement("div");
+                        productElement.innerHTML = `
+                            <div>
+                                <h2>${product.title}</h2>
+                                <p>${product.description}</p>
+                                <p>Price: $${product.price}</p>
+                                <button onclick="addToCart('${product._id}')">Add to Cart</button>
+                            </div>
+                            <hr>
+                        `;
+                        productsContainer.appendChild(productElement);
+                    });
+                } else {
+                    console.error("Failed to fetch products:", result.message);
+                    productsContainer.innerHTML = "<p>Failed to fetch products.</p>";
+                }
+            } catch (error) {
+                console.error("Error fetching products:", error);
+            }
+        });
+
+        async function addToCart(productId) {
+            try {
+                const response = await fetch(`/api/carts/:cid/products/${productId}`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        quantity: 1,
+                    }),
+                });
+                const result = await response.json();
+
+                if (result.status === "success") {
+                    alert("Product added to cart successfully!");
+                } else {
+                    console.error("Failed to add product to cart:", result.message);
+                }
+            } catch (error) {
+                console.error("Error adding product to cart:", error);
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+
+[
+    {
+      "_id": "b57f6936153c99eade4335ab",
+      "products": [
+        {
+          "_id": "65c14159ba2c4126cea400a4",
+          "quantity": 100
+        }
+      ],
+      "uid": "3831c72a89eecb0ce8d55bad",
+      "state": "entregado"
+    },
+    {
+      "_id": "d6ee9d2f296a5b45795a764e",
+      "products": [
+        {
+          "_id": "65c14159ba2c4126cea400a5",
+          "quantity": 100
+        }
+      ],
+      "uid": "65b969eea17688145e09394e",
+      "state": "enviado"
+    },
+    {
+      "_id": "9b83119feb2c028bd7d9dd13",
+      "products": [
+        {
+          "_id": "65c14159ba2c4126cea400a6",
+          "quantity": 100
+        }
+      ],
+      "uid": "65b969cda17688145e09394c",
+      "state": "enviado"
+    }
+  ]
+  

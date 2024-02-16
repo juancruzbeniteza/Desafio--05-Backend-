@@ -1,0 +1,48 @@
+[
+    {
+      "id": "1",
+      "title": "Smartphone",
+      "description": "High-end smartphone with advanced features.",
+      "price": 799.99,
+      "thumbnail": "https://www.apple.com/la/iphone-15-pro/",
+      "code": "SP123",
+      "stock": 50
+    },
+    {
+      "id": "2",
+      "title": "Laptop",
+      "description": "Powerful laptop with a sleek design.",
+      "price": 1299.99,
+      "thumbnail": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.apple.com%2Fla%2Fnewsroom%2F2023%2F01%2Fapple-unveils-macbook-pro-featuring-m2-pro-and-m2-max%2F&psig=AOvVaw1usQ31jHrRBpL25KZ1t3m2&ust=1707338185489000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJCmoMPIl4QDFQAAAAAdAAAAABAF",
+      "code": "LP456",
+      "stock": 30
+    },
+    {
+      "id": "3",
+      "title": "Smart TV",
+      "description": "Ultra HD smart television with smart features.",
+      "price": 899.99,
+      "thumbnail": "https://www.redusers.com/noticias/wp-content/uploads/2012/12/apple-tv.jpg",
+      "code": "TV789",
+      "stock": 20
+    },
+    {
+      "id": "4",
+      "title": "Digital Camera",
+      "description": "Professional digital camera with high-resolution capabilities.",
+      "price": 499.99,
+      "thumbnail": "https://i1.adis.ws/i/canon/eos-60d-frt-w-ef-s-18-55mm-is-ii_b78dfbb6c1614eef8b397e0c2c9fa1e0",
+      "code": "DC101",
+      "stock": 15
+    },
+    {
+      "id": "5",
+      "title": "Wireless Earbuds",
+      "description": "Premium wireless earbuds with noise-cancellation technology.",
+      "price": 149.99,
+      "thumbnail": "https://goudenimportaciones.com/wp-content/uploads/2022/11/MQD83.jpg",
+      "code": "EB234",
+      "stock": 40
+    }
+  ]
+  

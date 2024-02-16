@@ -1,0 +1,20 @@
+[
+    {
+      "id": "560fce785bb0c56284fcefc3",
+      "name": "Pablo",
+      "photo": "https://img.freepik.com/foto-gratis/chico-guapo-seguro-posando-contra-pared-blanca_176420-32936.jpg?size=626&ext=jpg&ga=GA1.1.87170709.1707177600&semt=sph",
+      "email": "jcba@example.com"
+    },
+    {
+      "id": "3831c72a89eecb0ce8d55bad",
+      "name": "Marcos",
+      "photo": "https://concepto.de/wp-content/uploads/2018/08/persona-e1533759204552.jpg",
+      "email": "jcba@example.com"
+    },
+    {
+      "id": "d8869bd39c36cf3be4401d1e",
+      "name": "Tomas",
+      "photo": "https://img.freepik.com/foto-gratis/joven-confiado_1098-20868.jpg",
+      "email": "jcba@example.com"
+    }
+  ]
